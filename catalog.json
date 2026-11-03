@@ -1,0 +1,1015 @@
+{
+  "consultedAt": "2026-11-03",
+  "scope": "Provider documentation; not an independent performance or learning benchmark.",
+  "tools": [
+    {
+      "id": "lichess",
+      "name": "Lichess",
+      "url": "https://lichess.org",
+      "source": "https://lichess.org/faq",
+      "extra": "https://lichess.org/forum/lichess-feedback/daily-analysis-limit-4",
+      "group": "motor",
+      "rank": 1,
+      "cost": "free",
+      "price": "Gratuito",
+      "limit": "Motor local sem cota de servidor. Análise nos servidores: 40/dia e 200/semana, sujeita à contabilização e regulação do serviço.",
+      "desc": "Uma base de estudo para analisar, comentar e testar variações com Stockfish.",
+      "why": "Primeira escolha para verificar ideias no tabuleiro, preservar comentários e entender como as métricas são calculadas.",
+      "caveat": "As linhas do motor exigem interpretação. Gratuidade não significa solicitações ilimitadas de análise aos servidores.",
+      "features": [
+        "motor",
+        "pgn",
+        "open",
+        "study"
+      ],
+      "labels": [
+        "Código aberto",
+        "Estudos",
+        "Stockfish"
+      ],
+      "en": {
+        "desc": "A study workspace for exploring, annotating and testing variations with Stockfish.",
+        "why": "The first choice for checking ideas on the board and understanding how analysis metrics are calculated.",
+        "caveat": "Engine lines still require interpretation. Free access does not mean unlimited server requests.",
+        "limit": "Local engine analysis has no server quota. Documented server limits: 40/day and 200/week, with additional accounting and throttling rules.",
+        "price": "Free",
+        "labels": [
+          "Open source",
+          "Studies",
+          "Stockfish"
+        ]
+      }
+    },
+    {
+      "id": "chesscom",
+      "name": "Chess.com",
+      "url": "https://www.chess.com/analysis",
+      "source": "https://support.chess.com/en/articles/8562418-what-does-each-level-of-premium-membership-get-me",
+      "group": "revisao",
+      "cost": "limited",
+      "price": "Gratuito com limites; assinaturas",
+      "limit": "Basic: uma revisão completa/dia. Platinum: revisão ilimitada. Diamond: explicações adicionais e Insights. Preço varia por região.",
+      "desc": "Revisão integrada às partidas, com avaliações, alternativas e recursos adicionais nos planos pagos.",
+      "why": "A referência para comparar conveniência: suas partidas já estão na plataforma.",
+      "caveat": "Revisão, explicações e relatórios agregados não têm a mesma disponibilidade em todos os planos.",
+      "features": [
+        "motor",
+        "pgn",
+        "explain",
+        "patterns"
+      ],
+      "labels": [
+        "Integrado às partidas",
+        "Planos por recurso"
+      ],
+      "en": {
+        "desc": "Game review integrated with your games, with evaluations, alternatives and additional paid features.",
+        "why": "A useful reference for convenience: your games are already on the platform.",
+        "caveat": "Game review, explanations and aggregate reports have different availability across plans.",
+        "limit": "Basic: one full review/day. Platinum: unlimited reviews. Diamond: additional explanations and Insights. Prices vary by region.",
+        "price": "Free with limits; subscriptions",
+        "labels": [
+          "Integrated game review",
+          "Features depend on plan"
+        ]
+      }
+    },
+    {
+      "id": "grader",
+      "name": "ChessGrader",
+      "url": "https://chessgrader.com/",
+      "source": "https://chessgrader.com/methodology/",
+      "group": "explicacao",
+      "rank": 2,
+      "cost": "free",
+      "price": "Revisões gratuitas",
+      "limit": "Sem limite diário, cadastro obrigatório ou anúncios, segundo a oferta pública consultada.",
+      "desc": "Revisões com explicações dos momentos importantes e critérios de classificação publicados.",
+      "why": "A metodologia detalha a busca e a verificação de posições críticas, permitindo avaliar como o relatório é produzido.",
+      "caveat": "Os testes publicados são do próprio fornecedor e usam amostras pequenas. A classificação é uma aproximação própria, não uma reprodução exata do Chess.com.",
+      "features": [
+        "motor",
+        "pgn",
+        "explain"
+      ],
+      "labels": [
+        "Metodologia publicada",
+        "Sem anúncios anunciados"
+      ],
+      "en": {
+        "desc": "Game reviews with explanations of critical moments and published move-grading criteria.",
+        "why": "Its documented search and verification process makes the report easier to examine.",
+        "caveat": "Published benchmarks are vendor-run and small. The grading model approximates rather than reproduces Chess.com.",
+        "limit": "Reviews advertised with no daily cap, required account or ads.",
+        "price": "Free reviews",
+        "labels": [
+          "Published methodology",
+          "Advertised without ads"
+        ]
+      }
+    },
+    {
+      "id": "kit",
+      "name": "Chesskit",
+      "url": "https://chesskit.org/",
+      "source": "https://github.com/GuillaumeSD/Chesskit",
+      "group": "revisao",
+      "rank": 3,
+      "cost": "free",
+      "price": "Gratuito",
+      "limit": "Projeto gratuito e de código aberto; partidas armazenadas no navegador.",
+      "desc": "Importe partidas do Chess.com ou Lichess e examine lances, gráficos e variações.",
+      "why": "Combina revisão interativa e código inspecionável em uma ferramenta gratuita.",
+      "caveat": "Prioriza exploração no tabuleiro; não espere explicações verbais extensas para todas as posições.",
+      "features": [
+        "motor",
+        "pgn",
+        "open"
+      ],
+      "labels": [
+        "Código aberto",
+        "Importação por usuário"
+      ],
+      "en": {
+        "desc": "Import Chess.com or Lichess games and explore moves, evaluation graphs and variations.",
+        "why": "A free interactive review tool with inspectable source code.",
+        "caveat": "Primarily a board exploration tool; do not expect extensive verbal explanations of every position.",
+        "limit": "Free and open source; games can be stored in the browser.",
+        "price": "Free",
+        "labels": [
+          "Open source",
+          "Import by username"
+        ]
+      }
+    },
+    {
+      "id": "decode",
+      "name": "DecodeChess",
+      "url": "https://decodechess.com/",
+      "source": "https://decodechess.com/pricing-plans/",
+      "group": "explicacao",
+      "rank": 4,
+      "cost": "limited",
+      "price": "US$ 8,25/mês ou US$ 84/ano",
+      "limit": "Página de preços: uma partida/dia no gratuito; explicações profundas de posições no pago. Também há créditos avulsos.",
+      "desc": "Explicações de ameaças, planos, função das peças e alternativas recomendadas pelo Stockfish.",
+      "why": "A proposta mais diretamente alinhada ao interesse por conceitos e pelas relações que justificam um lance.",
+      "caveat": "O recurso de explicação profunda é pago. Experimente uma partida antes de decidir se a linguagem acrescenta compreensão.",
+      "features": [
+        "motor",
+        "pgn",
+        "explain"
+      ],
+      "labels": [
+        "Planos e ameaças",
+        "Explicação em linguagem natural"
+      ],
+      "en": {
+        "desc": "Explanations of threats, plans, piece functions and Stockfish-recommended alternatives.",
+        "why": "Its focus on concepts and relationships directly addresses the question of why a move works.",
+        "caveat": "Deep position explanations require payment. Try the free review before subscribing.",
+        "limit": "Pricing page: one game/day free; deep position explanations on paid plans. One-off credits are also available.",
+        "price": "US$8.25/month or US$84/year",
+        "labels": [
+          "Plans and threats",
+          "Natural-language explanations"
+        ]
+      }
+    },
+    {
+      "id": "mated",
+      "name": "Mated",
+      "url": "https://mated.gg/",
+      "source": "https://mated.gg/",
+      "group": "explicacao",
+      "rank": 5,
+      "cost": "free",
+      "price": "Revisão anunciada como gratuita",
+      "limit": "A página anuncia revisão gratuita, explicações em inglês e relatório de várias partidas.",
+      "desc": "Comentários dos lances e perguntas sobre posições, com importação de partidas online.",
+      "why": "Reduz o trabalho entre carregar uma partida e encontrar uma explicação verbal.",
+      "caveat": "A correção dos comentários não foi testada sistematicamente neste levantamento. Verifique as afirmações executando as variantes.",
+      "features": [
+        "motor",
+        "pgn",
+        "explain",
+        "patterns"
+      ],
+      "labels": [
+        "Comentários em inglês",
+        "Perguntas sobre posições"
+      ],
+      "en": {
+        "desc": "Move commentary and questions about positions, with online game imports.",
+        "why": "A short path from loading a game to reading a verbal explanation.",
+        "caveat": "Commentary correctness was not systematically tested in this survey. Check claims by playing through the variations.",
+        "limit": "Publicly advertised free reviews, English explanations and multi-game reports.",
+        "price": "Reviews advertised as free",
+        "labels": [
+          "English commentary",
+          "Position questions"
+        ]
+      }
+    },
+    {
+      "id": "wintr",
+      "name": "WintrChess",
+      "url": "https://wintrchess.com/analysis",
+      "source": "https://wintrchess.com/help",
+      "group": "revisao",
+      "cost": "free",
+      "price": "Análise gratuita",
+      "limit": "Avaliações, precisão e classificação dos lances fornecidas gratuitamente; não foi confirmado um teto numérico na documentação consultada.",
+      "desc": "Alternativa direta ao formato de revisão com notas por lance, gráfico e Stockfish.",
+      "why": "Útil para quem quer reconhecer rapidamente o fluxo de uma revisão do Chess.com.",
+      "caveat": "Categorias e porcentagens podem diferir do Chess.com. Não equivalem a uma medida universal da qualidade do lance.",
+      "features": [
+        "motor",
+        "pgn"
+      ],
+      "labels": [
+        "Importação por usuário",
+        "Precisão e alternativas"
+      ],
+      "en": {
+        "desc": "A direct game-review alternative with move grades, graphs and Stockfish evaluations.",
+        "why": "Useful when you want a familiar review workflow after playing on Chess.com.",
+        "caveat": "Move categories and accuracy can differ from Chess.com; neither is a universal measurement.",
+        "limit": "Evaluations, accuracy and move classification are offered free. A numeric quota was not confirmed in the documentation consulted.",
+        "price": "Free analysis",
+        "labels": [
+          "Import by username",
+          "Accuracy and alternatives"
+        ]
+      }
+    },
+    {
+      "id": "sigma",
+      "name": "Chessigma",
+      "url": "https://www.chessigma.com/",
+      "source": "https://www.chessigma.com/",
+      "group": "revisao",
+      "cost": "free",
+      "price": "Revisão gratuita; extras pagos",
+      "limit": "Revisões sem limite diário anunciado e sem conta obrigatória para analisar.",
+      "desc": "Relatórios por partida com avaliação, precisão e melhor lance em cada posição.",
+      "why": "Uma opção para revisar várias partidas sem contratar o conjunto de recursos adicionais.",
+      "caveat": "Gratuidade da revisão não implica gratuidade de todos os recursos do site.",
+      "features": [
+        "motor",
+        "pgn"
+      ],
+      "labels": [
+        "Motor no dispositivo",
+        "Revisões sem cota anunciada"
+      ],
+      "en": {
+        "desc": "Per-game reports with evaluations, accuracy and the engine-recommended move in each position.",
+        "why": "Review multiple games without paying for the platform’s additional features.",
+        "caveat": "Free game review does not imply that every feature on the site is free.",
+        "limit": "No daily review cap advertised; no account required to analyze.",
+        "price": "Free reviews; paid extras",
+        "labels": [
+          "On-device engine",
+          "No advertised review quota"
+        ]
+      }
+    },
+    {
+      "id": "itup",
+      "name": "Chess It Up",
+      "url": "https://chessitup.com/",
+      "source": "https://chessitup.com/",
+      "group": "revisao",
+      "cost": "free",
+      "price": "Analisador gratuito; extras pagos",
+      "limit": "Página oficial: revisões gratuitas ilimitadas na profundidade 12; Premium oferece até 25 e remove anúncios. Não exige conta para revisar.",
+      "desc": "Tabuleiro de análise com Stockfish, acompanhado de recursos de treinamento.",
+      "why": "Reúne análise e outras atividades em uma mesma interface.",
+      "caveat": "As configurações da análise gratuita e paga diferem; maior profundidade não demonstra, por si só, valor educacional.",
+      "features": [
+        "motor",
+        "pgn"
+      ],
+      "labels": [
+        "Tabuleiro de análise",
+        "Treinamento adicional"
+      ],
+      "en": {
+        "desc": "A Stockfish analysis board accompanied by training features.",
+        "why": "Combines analysis with other study activities in one interface.",
+        "caveat": "The free and paid analysis settings differ; deeper search does not by itself establish educational value.",
+        "limit": "Official page: unlimited free reviews at depth 12; Premium offers depth up to 25 and removes ads. No account required for reviews.",
+        "price": "Free analyzer; paid extras",
+        "labels": [
+          "Analysis board",
+          "Additional training"
+        ]
+      }
+    },
+    {
+      "id": "audit",
+      "name": "Audit Chess",
+      "url": "https://www.auditchess.com/",
+      "source": "https://www.auditchess.com/",
+      "group": "padroes",
+      "cost": "free",
+      "price": "Análise anunciada como gratuita",
+      "limit": "Ferramentas anunciadas como gratuitas, sem limite e sem cadastro para análise.",
+      "desc": "Agrupa erros, explora aberturas e cria exercícios a partir do histórico de partidas.",
+      "why": "Especialmente relevante para relacionar ocorrências em várias partidas a posições concretas.",
+      "caveat": "Categorias automáticas e correlações não demonstram causas psicológicas. Confira amostras e posições que sustentam cada conclusão.",
+      "features": [
+        "motor",
+        "pgn",
+        "patterns",
+        "drills"
+      ],
+      "labels": [
+        "Erros recorrentes",
+        "Exercícios das partidas"
+      ],
+      "en": {
+        "desc": "Groups errors, explores openings and builds exercises from your game history.",
+        "why": "Particularly relevant for connecting recurring observations to the actual positions behind them.",
+        "caveat": "Automatic categories and correlations do not establish psychological causes. Check the sample and supporting positions.",
+        "limit": "Analysis tools advertised as free, unlimited and usable without signup.",
+        "price": "Analysis advertised as free",
+        "labels": [
+          "Recurring errors",
+          "Exercises from your games"
+        ]
+      }
+    },
+    {
+      "id": "dna",
+      "name": "Chess DNA",
+      "url": "https://chessdna.app/tools/chess-game-review.html",
+      "source": "https://chessdna.app/tools/chess-game-review.html",
+      "group": "padroes",
+      "cost": "free",
+      "price": "Revisor gratuito; plataforma com extras",
+      "limit": "Revisor público anunciado como gratuito e ilimitado. A gratuidade não se estende automaticamente a toda a plataforma.",
+      "desc": "Combina revisão individual com uma proposta mais ampla de detectar recorrências e orientar exercícios.",
+      "why": "Permite investigar que tipos de erro reaparecem, além de olhar apenas a última derrota.",
+      "caveat": "O nome do produto é uma marca; seus relatórios não constituem medidas genéticas ou neurobiológicas.",
+      "features": [
+        "motor",
+        "pgn",
+        "patterns",
+        "drills"
+      ],
+      "labels": [
+        "Recorrências",
+        "Revisão no navegador"
+      ],
+      "en": {
+        "desc": "Individual review plus a broader proposal to detect recurring errors and guide practice.",
+        "why": "Investigate what recurs rather than examining only your most recent loss.",
+        "caveat": "The product name is a brand; its reports are not genetic or neurobiological measurements.",
+        "limit": "The public reviewer is advertised as free and unlimited. This does not establish free access to every platform feature.",
+        "price": "Free reviewer; additional platform features",
+        "labels": [
+          "Recurring patterns",
+          "In-browser review"
+        ]
+      }
+    },
+    {
+      "id": "dream",
+      "name": "ChessDream",
+      "url": "https://chessdream.app/",
+      "source": "https://chessdream.app/",
+      "group": "revisao",
+      "cost": "free",
+      "price": "Gratuito; remoção de anúncios opcional",
+      "limit": "Revisões ilimitadas e sem cadastro anunciadas. A página oferece upgrade opcional de US$ 1 para remover anúncios e acelerar revisões.",
+      "desc": "Avaliações por lance, sugestões de alternativas e gráfico da partida no navegador.",
+      "why": "Uma entrada simples para carregar uma partida e percorrer os momentos importantes.",
+      "caveat": "Os comentários comerciais sobre velocidade não foram medidos neste levantamento.",
+      "features": [
+        "motor",
+        "pgn"
+      ],
+      "labels": [
+        "Sem cadastro anunciado",
+        "Importação por usuário"
+      ],
+      "en": {
+        "desc": "Move evaluations, alternative suggestions and an evaluation graph in the browser.",
+        "why": "A simple way to load a game and revisit its critical moments.",
+        "caveat": "The vendor’s speed claims were not measured in this survey.",
+        "limit": "Unlimited reviews without signup advertised. An optional US$1 upgrade removes ads and advertises faster reviews.",
+        "price": "Free; optional ad removal",
+        "labels": [
+          "No signup advertised",
+          "Import by username"
+        ]
+      }
+    },
+    {
+      "id": "analysis",
+      "name": "ChessAnalysis",
+      "url": "https://chessanalysis.dev/",
+      "source": "https://chessanalysis.dev/",
+      "group": "revisao",
+      "cost": "free",
+      "price": "Gratuito",
+      "limit": "Sem limite diário anunciado; motor executado no dispositivo.",
+      "desc": "Revisão com explicação dos principais erros, repetição de posições e PGN comentado.",
+      "why": "Oferece uma passagem concreta entre identificar um erro e tentar resolver a posição novamente.",
+      "caveat": "Explicações breves dos erros não substituem a verificação das respostas possíveis.",
+      "features": [
+        "motor",
+        "pgn",
+        "explain",
+        "drills"
+      ],
+      "labels": [
+        "Repetir posições",
+        "Exportar PGN comentado"
+      ],
+      "en": {
+        "desc": "Game review with explanations of key errors, retry positions and annotated PGN export.",
+        "why": "Connects identifying an error to attempting the position again.",
+        "caveat": "Brief explanations still need to be checked against the legal replies in the position.",
+        "limit": "No daily cap advertised; Stockfish runs on your device.",
+        "price": "Free",
+        "labels": [
+          "Retry positions",
+          "Annotated PGN export"
+        ]
+      }
+    },
+    {
+      "id": "vox",
+      "name": "ChessVox",
+      "url": "https://chessvox.com/tools/game-review",
+      "source": "https://chessvox.com/tools/game-review",
+      "group": "padroes",
+      "cost": "limited",
+      "price": "Acesso gratuito com condições",
+      "limit": "Importar partidas online exige conta gratuita. PGN pode ser analisado como visitante; cota diária não confirmada neste levantamento.",
+      "desc": "Relaciona revisões individuais a temas recorrentes e a uma proposta de treinamento.",
+      "why": "Pode conectar erros encontrados no histórico às atividades seguintes de estudo.",
+      "caveat": "Não foi confirmado um número estável de revisões gratuitas por dia.",
+      "features": [
+        "motor",
+        "pgn",
+        "patterns",
+        "drills"
+      ],
+      "labels": [
+        "Agrupamento de erros",
+        "PGN como visitante"
+      ],
+      "en": {
+        "desc": "Connects individual reviews to recurring themes and suggested training.",
+        "why": "Can link errors observed in your history to your next study activities.",
+        "caveat": "A stable number of free daily reviews was not confirmed.",
+        "limit": "Online game imports require a free account. Guests can analyze a PGN; daily allowance not confirmed.",
+        "price": "Free access with conditions",
+        "labels": [
+          "Error grouping",
+          "Guest PGN analysis"
+        ]
+      }
+    },
+    {
+      "id": "lumi",
+      "name": "Lumichess",
+      "url": "https://lumichess.com/",
+      "source": "https://lumichess.com/",
+      "group": "padroes",
+      "cost": "free",
+      "price": "Revisões gratuitas; treinador pago",
+      "limit": "Revisões e relatórios anunciados como gratuitos e sem cota diária. Treinador disponível em modalidade paga.",
+      "desc": "Reúne relatórios de partidas, histórico e indicadores de desempenho.",
+      "why": "Uma opção para consultar tanto a partida isolada quanto o conjunto de resultados.",
+      "caveat": "Distingua as funções gratuitas de relatório das atividades do treinador pago.",
+      "features": [
+        "motor",
+        "pgn",
+        "patterns"
+      ],
+      "labels": [
+        "Relatórios de perfil",
+        "Histórico de partidas"
+      ],
+      "en": {
+        "desc": "Combines game reports, history and performance indicators.",
+        "why": "An option for examining both an individual game and a broader set of results.",
+        "caveat": "Distinguish free reporting functions from the paid coach.",
+        "limit": "Reviews and reports advertised as free with no daily quota. Coach activities have a paid tier.",
+        "price": "Free reviews; paid coach",
+        "labels": [
+          "Profile reports",
+          "Game history"
+        ]
+      }
+    },
+    {
+      "id": "da",
+      "name": "Chessda",
+      "url": "https://chessda.com/",
+      "source": "https://chessda.com/",
+      "group": "revisao",
+      "cost": "free",
+      "price": "Gratuito",
+      "limit": "Revisão ilimitada anunciada, no navegador e sem conta obrigatória.",
+      "desc": "Comentários, momentos críticos, gráfico e exploração de variações em uma revisão guiada.",
+      "why": "Combina um percurso pelos momentos críticos com liberdade para testar outra continuação.",
+      "caveat": "A estimativa de rating de uma única partida não deve ser tratada como medida estável da força do jogador.",
+      "features": [
+        "motor",
+        "pgn",
+        "explain"
+      ],
+      "labels": [
+        "Revisão guiada",
+        "Variações interativas"
+      ],
+      "en": {
+        "desc": "Commentary, critical moments, graphs and variation exploration in a guided review.",
+        "why": "Combines a tour of critical moments with the freedom to test another continuation.",
+        "caveat": "A single-game rating estimate is not a stable measurement of playing strength.",
+        "limit": "Unlimited in-browser reviews advertised without a required account.",
+        "price": "Free",
+        "labels": [
+          "Guided review",
+          "Interactive variations"
+        ]
+      }
+    },
+    {
+      "id": "aim",
+      "name": "Aimchess",
+      "url": "https://aimchess.com/",
+      "source": "https://aimchess.com/",
+      "group": "padroes",
+      "cost": "limited",
+      "price": "US$ 7,99/mês ou US$ 57,99/ano",
+      "limit": "Standard: um relatório mensal de 40 partidas, sessão diária de treino e plano de estudo. Premium amplia análise e atividades.",
+      "desc": "Análise agregada de partidas e exercícios personalizados a partir dos erros.",
+      "why": "Complementa a revisão de um jogo com uma investigação mais ampla do histórico.",
+      "caveat": "A oferta gratuita tem cota reduzida. As alegações comerciais de melhora não foram auditadas aqui.",
+      "features": [
+        "motor",
+        "patterns",
+        "drills"
+      ],
+      "labels": [
+        "Relatório de 40 partidas",
+        "Treino personalizado"
+      ],
+      "en": {
+        "desc": "Aggregate game analysis and personalized exercises derived from your mistakes.",
+        "why": "Complements single-game review with a broader investigation of your history.",
+        "caveat": "The free allowance is limited. Commercial improvement claims were not audited here.",
+        "limit": "Standard: one monthly 40-game report, a daily training session and study plan. Premium expands reports and activities.",
+        "price": "US$7.99/month or US$57.99/year",
+        "labels": [
+          "40-game report",
+          "Personalized training"
+        ]
+      }
+    },
+    {
+      "id": "compass",
+      "name": "Chess Compass",
+      "url": "https://www.chesscompass.com/",
+      "source": "https://www.chesscompass.com/",
+      "group": "motor",
+      "cost": "free",
+      "price": "Gratuito",
+      "limit": "Tabuleiro gratuito no navegador, sem cadastro obrigatório anunciado.",
+      "desc": "Importação de partidas, Stockfish, alternativas visuais e relatório de lances.",
+      "why": "Útil para investigar uma posição e ver as melhores continuações diretamente no tabuleiro.",
+      "caveat": "O levantamento não verificou a precisão de cada indicador ou a profundidade efetiva de análise.",
+      "features": [
+        "motor",
+        "pgn"
+      ],
+      "labels": [
+        "Alternativas visuais",
+        "Exploração no tabuleiro"
+      ],
+      "en": {
+        "desc": "Game imports, Stockfish, visual alternatives and move reports.",
+        "why": "Useful for investigating a position and seeing candidate continuations on the board.",
+        "caveat": "Individual indicator accuracy and effective search depth were not verified.",
+        "limit": "Free browser-based board; no mandatory signup advertised.",
+        "price": "Free",
+        "labels": [
+          "Visual alternatives",
+          "Board exploration"
+        ]
+      }
+    },
+    {
+      "id": "chessify",
+      "name": "Chessify",
+      "url": "https://chessify.me/",
+      "source": "https://chessify.me/",
+      "group": "motor",
+      "cost": "limited",
+      "price": "Acesso gratuito; capacidade extra paga",
+      "limit": "Análise gratuita mediante cadastro; servidores e capacidade adicional em modalidades pagas.",
+      "desc": "Plataforma de análise por motores com infraestrutura computacional em nuvem.",
+      "why": "Faz mais sentido quando a exploração por motor e a capacidade de cálculo são a prioridade.",
+      "caveat": "Não é um substituto direto de uma explicação didática completa. Maior capacidade de cálculo não garante maior aprendizagem.",
+      "features": [
+        "motor",
+        "pgn"
+      ],
+      "labels": [
+        "Motores em nuvem",
+        "Cadastro no acesso gratuito"
+      ],
+      "en": {
+        "desc": "An engine-analysis platform with additional cloud computing capacity.",
+        "why": "Most relevant when engine exploration and computational capacity are the priority.",
+        "caveat": "It is not a direct replacement for a complete teaching explanation. More computation does not guarantee more learning.",
+        "limit": "Free analysis with registration; additional server capacity is available through paid options.",
+        "price": "Free access; paid extra capacity",
+        "labels": [
+          "Cloud engines",
+          "Free tier requires registration"
+        ]
+      }
+    },
+    {
+      "id": "position",
+      "name": "what’sthisposition",
+      "url": "https://www.whatsthisposition.com/",
+      "group": "explicacao",
+      "cost": "free",
+      "features": [
+        "motor",
+        "pgn",
+        "explain"
+      ],
+      "source": "https://www.whatsthisposition.com/",
+      "added": true,
+      "desc": "Revisão de partidas e análise de posições por FEN, imagem ou tabuleiro, com ameaças e planos.",
+      "why": "Permite passar de uma partida inteira para uma pergunta sobre uma posição específica.",
+      "caveat": "O reconhecimento de imagens e as explicações precisam ser conferidos no tabuleiro. A extensão é opcional e não foi instalada.",
+      "limit": "Revisão gratuita anunciada, executada no navegador; oferece extensão opcional para Chrome.",
+      "price": "Revisão gratuita",
+      "labels": [
+        "Posições por imagem ou FEN",
+        "Extensão opcional"
+      ],
+      "en": {
+        "desc": "Game review and position analysis from FEN, images or a board, with threats and plans.",
+        "why": "Move from a full game to a specific question about one position.",
+        "caveat": "Image recognition and explanations should be checked on the board. The optional extension was not installed.",
+        "limit": "Free reviews advertised, running in the browser; an optional Chrome extension is offered.",
+        "price": "Free reviews",
+        "labels": [
+          "Positions from images or FEN",
+          "Optional extension"
+        ]
+      }
+    },
+    {
+      "id": "debrief",
+      "name": "ChessDebrief · holostack",
+      "url": "https://chessdebrief.holostack.in/",
+      "group": "padroes",
+      "cost": "free",
+      "features": [
+        "motor",
+        "pgn",
+        "explain",
+        "patterns"
+      ],
+      "source": "https://chessdebrief.holostack.in/",
+      "added": true,
+      "desc": "Revisões com comentários e indicadores entre partidas, incluindo fase, relógio e aberturas.",
+      "why": "Relaciona o erro individual ao que reaparece em várias partidas.",
+      "caveat": "É um projeto diferente de chessdebrief.com. Não foram auditadas suas categorias ou métricas.",
+      "limit": "O site anuncia análise gratuita, sem limite diário e executada no navegador.",
+      "price": "Gratuito anunciado",
+      "labels": [
+        "Precisão por fase",
+        "Relógio e recorrências"
+      ],
+      "en": {
+        "desc": "Commented reviews and cross-game indicators covering phases, clocks and openings.",
+        "why": "Relates an individual error to observations recurring across several games.",
+        "caveat": "This is a separate project from chessdebrief.com. Its categories and metrics were not audited.",
+        "limit": "The site advertises free analysis without daily limits, running in your browser.",
+        "price": "Advertised as free",
+        "labels": [
+          "Accuracy by phase",
+          "Clocks and recurring errors"
+        ]
+      }
+    },
+    {
+      "id": "debriefcoach",
+      "name": "ChessDebrief · coaching",
+      "url": "https://chessdebrief.com/",
+      "group": "padroes",
+      "cost": "limited",
+      "features": [
+        "patterns",
+        "drills",
+        "explain"
+      ],
+      "source": "https://chessdebrief.com/",
+      "added": true,
+      "desc": "Relatório de erros recorrentes e proposta semanal de treinamento a partir de partidas online.",
+      "why": "Útil para experimentar um relatório estruturado que prioriza temas do histórico.",
+      "caveat": "As estimativas de perda de resultados e as alegações de melhora não foram validadas. Serviço distinto de holostack.",
+      "limit": "Gratuito: um relatório/mês de 10 partidas do mês atual. Basic anuncia cinco relatórios/mês, com até 50 partidas dos últimos três meses.",
+      "price": "Gratuito limitado; Basic US$ 9/mês",
+      "labels": [
+        "Plano semanal",
+        "Relatório mensal gratuito"
+      ],
+      "en": {
+        "desc": "Recurring-error reports and a proposed weekly training schedule from online games.",
+        "why": "Try a structured debrief that prioritizes themes across your history.",
+        "caveat": "Outcome-loss estimates and improvement claims were not validated. Separate service from the holostack project.",
+        "limit": "Free: one debrief/month covering 10 games from the current month. Basic advertises five/month with up to 50 games from the last three months.",
+        "price": "Limited free tier; Basic US$9/month",
+        "labels": [
+          "Weekly plan",
+          "One free monthly debrief"
+        ]
+      }
+    },
+    {
+      "id": "shahmat",
+      "name": "Shahmat",
+      "url": "https://shahmat.io/",
+      "group": "explicacao",
+      "cost": "free",
+      "features": [
+        "motor",
+        "pgn",
+        "explain"
+      ],
+      "source": "https://shahmat.io/",
+      "added": true,
+      "desc": "Revisão com fatores posicionais: segurança do rei, atividade, estrutura e espaço.",
+      "why": "Uma forma de examinar quais relações posicionais acompanham a avaliação numérica.",
+      "caveat": "Relatórios de centenas de partidas aparecem como lançamentos futuros em novembro e dezembro de 2026; não foram tratados como recursos já disponíveis.",
+      "limit": "Revisão local gratuita e sem limite anunciada; dez comentários do treinador/mês. Relatórios pagos estão em lista de espera na data da consulta.",
+      "price": "Revisão gratuita; relatórios futuros pagos",
+      "labels": [
+        "Fatores posicionais",
+        "Dez comentários/mês"
+      ],
+      "en": {
+        "desc": "Reviews with positional factors: king safety, activity, structure and space.",
+        "why": "Examine positional relationships alongside the numerical evaluation.",
+        "caveat": "Hundreds-of-games reports are listed for future November/December 2026 releases; they are not treated as available features.",
+        "limit": "Unlimited free local reviews advertised, plus ten coach notes/month. Paid reports are waitlisted at the consultation date.",
+        "price": "Free reviews; paid reports forthcoming",
+        "labels": [
+          "Positional factors",
+          "Ten coach notes/month"
+        ]
+      }
+    },
+    {
+      "id": "xray",
+      "name": "Chess X-Ray",
+      "url": "https://chessxray.com/chess-analysis",
+      "group": "revisao",
+      "cost": "free",
+      "features": [
+        "motor",
+        "pgn"
+      ],
+      "source": "https://chessxray.com/chess-analysis",
+      "added": true,
+      "desc": "Revisor com Stockfish no navegador, precisão, alternativas e momentos de mudança.",
+      "why": "Uma alternativa simples para importar usuário, link ou PGN.",
+      "caveat": "A revisão gratuita é distinta da oferta de vídeos e integração com ChatGPT; os créditos destes recursos não foram auditados.",
+      "limit": "Página anuncia revisão gratuita e ilimitada sem conta; outros recursos usam uma oferta separada.",
+      "price": "Revisor gratuito; extras separados",
+      "labels": [
+        "Usuário, link ou PGN",
+        "Motor no navegador"
+      ],
+      "en": {
+        "desc": "An in-browser Stockfish reviewer with accuracy, alternatives and turning points.",
+        "why": "A simple alternative for importing a username, game link or PGN.",
+        "caveat": "Free review is separate from the video and ChatGPT integration offer; their credits were not audited.",
+        "limit": "The page advertises free unlimited reviews without an account; other features have a separate offer.",
+        "price": "Free reviewer; separate extras",
+        "labels": [
+          "Username, link or PGN",
+          "Browser engine"
+        ]
+      }
+    },
+    {
+      "id": "chessy",
+      "name": "Chessy",
+      "url": "https://chessy.uk/analyze/",
+      "group": "explicacao",
+      "cost": "limited",
+      "features": [
+        "motor",
+        "pgn",
+        "explain"
+      ],
+      "source": "https://chessy.uk/analyze/",
+      "added": true,
+      "desc": "Revisão com comentários por lance, precisão e gráfico da partida.",
+      "why": "Explicações curtas sobre o que mudou na posição, acompanhadas do motor.",
+      "caveat": "O fornecedor descreve comentários derivados do tabuleiro; a correção não foi auditada sistematicamente.",
+      "limit": "Conta gratuita: três análises/dia. Pro anunciado como ilimitado; preço não confirmado.",
+      "price": "Três análises/dia grátis; Pro pago",
+      "labels": [
+        "Comentários em inglês",
+        "Motor no dispositivo"
+      ],
+      "en": {
+        "desc": "Game review with per-move commentary, accuracy and an evaluation graph.",
+        "why": "Short explanations of what changed in a position alongside the engine.",
+        "caveat": "The vendor describes board-derived commentary; correctness was not systematically audited.",
+        "limit": "Free account: three analyses/day. Pro advertised as unlimited; price not confirmed.",
+        "price": "Three free analyses/day; paid Pro",
+        "labels": [
+          "English commentary",
+          "On-device engine"
+        ]
+      }
+    },
+    {
+      "id": "hint",
+      "name": "ChessHint",
+      "url": "https://chesshint.com/",
+      "group": "explicacao",
+      "cost": "unknown",
+      "features": [
+        "motor",
+        "pgn",
+        "explain"
+      ],
+      "source": "https://chesshint.com/",
+      "added": true,
+      "desc": "Revisão de partidas do Chess.com, Lichess e PGN com explicações apoiadas por Stockfish.",
+      "why": "Uma opção adicional para testar explicações dos próprios erros.",
+      "caveat": "A página principal confirmou a proposta; a rota de análise não pôde ser lida e os limites gratuitos não foram confirmados.",
+      "limit": "Modelo de acesso e cotas não confirmados nesta consulta.",
+      "price": "Acesso e preços a confirmar",
+      "labels": [
+        "Explicações com Stockfish",
+        "PGN e partidas online"
+      ],
+      "en": {
+        "desc": "Reviews of Chess.com, Lichess and PGN games with Stockfish-backed explanations.",
+        "why": "An additional option for trying explanations of your own mistakes.",
+        "caveat": "The homepage confirmed the offer; the analysis route could not be read and free limits were not confirmed.",
+        "limit": "Access model and quotas were not confirmed in this consultation.",
+        "price": "Access and prices unconfirmed",
+        "labels": [
+          "Stockfish-backed explanations",
+          "PGN and online games"
+        ]
+      }
+    },
+    {
+      "id": "noctie",
+      "name": "Noctie",
+      "url": "https://noctie.ai/",
+      "source": "https://noctie.ai/pricing/",
+      "group": "padroes",
+      "cost": "limited",
+      "features": [
+        "drills",
+        "pgn"
+      ],
+      "added": true,
+      "desc": "Treinamento contra computador e exercícios dos erros, inclusive em partidas importadas.",
+      "why": "Conecta posições das partidas a exercícios com repetição espaçada.",
+      "caveat": "É principalmente uma ferramenta de treinamento. Não equivale automaticamente a uma revisão completa com explicação verbal de todas as posições.",
+      "limit": "Há assinatura e proposta de teste; não foi confirmado um preço regional estável nesta consulta.",
+      "price": "Assinatura; consultar condições atuais",
+      "labels": [
+        "Exercícios dos erros",
+        "Repetição espaçada"
+      ],
+      "en": {
+        "desc": "Computer-opponent training and exercises from mistakes, including imported games.",
+        "why": "Connects game positions to exercises using spaced repetition.",
+        "caveat": "Primarily a training tool, not automatically equivalent to a full game review explaining every position.",
+        "limit": "Subscription and trial offer; a stable regional price was not confirmed in this consultation.",
+        "price": "Subscription; check current terms",
+        "labels": [
+          "Exercises from mistakes",
+          "Spaced repetition"
+        ]
+      }
+    },
+    {
+      "id": "universe",
+      "name": "Chessiverse",
+      "url": "https://chessiverse.com/",
+      "group": "revisao",
+      "cost": "limited",
+      "features": [
+        "motor",
+        "pgn",
+        "explain",
+        "patterns"
+      ],
+      "source": "https://chessiverse.com/",
+      "added": true,
+      "desc": "Revisão de jogos importados, momentos críticos, alternativas e indicadores por fase.",
+      "why": "Permite estudar uma partida de outra plataforma e explorar variações no mesmo ambiente de treinamento.",
+      "caveat": "A página descreve revisão e Insights com cota diária gratuita, sem número confirmado; recursos adicionais são pagos.",
+      "limit": "Revisão gratuita com conta até uma cota diária. Premium amplia o acesso; consultar preço e limites regionais.",
+      "price": "Revisão com cota gratuita; Premium pago",
+      "labels": [
+        "PGN de outras plataformas",
+        "Momentos críticos"
+      ],
+      "en": {
+        "desc": "Imported-game reviews, critical moments, alternatives and phase-based indicators.",
+        "why": "Study a game from another platform and explore variations in the same training environment.",
+        "caveat": "The page describes free daily quotas for review and Insights without a confirmed number; additional features are paid.",
+        "limit": "Game review is free with an account up to a daily allowance. Premium expands access; check regional prices and quotas.",
+        "price": "Free review allowance; paid Premium",
+        "labels": [
+          "PGN from other platforms",
+          "Critical moments"
+        ]
+      }
+    },
+    {
+      "id": "juls",
+      "name": "Chess Review · Julsgaard",
+      "url": "https://github.com/T-Julsgaard/Chess-Review",
+      "kind": "extension",
+      "source": "https://github.com/T-Julsgaard/Chess-Review",
+      "group": "revisao",
+      "cost": "free",
+      "features": [
+        "motor",
+        "pgn",
+        "open"
+      ],
+      "added": true,
+      "desc": "Projeto de revisão com Stockfish local, gráfico de avaliação e áreas de estudo.",
+      "why": "Mais uma implementação de código aberto para examinar critérios e experimentar a revisão.",
+      "caveat": "A proposta foi conferida no repositório oficial; os recursos pedagógicos e a extensão não foram testados integralmente.",
+      "limit": "O repositório descreve análise gratuita e local, sem conta, com importação de partidas online.",
+      "price": "Gratuito e de código aberto",
+      "labels": [
+        "Código aberto",
+        "Stockfish local"
+      ],
+      "en": {
+        "desc": "A local Stockfish review project with an evaluation graph and study workspaces.",
+        "why": "Another open-source implementation for inspecting criteria and trying game review.",
+        "caveat": "The offer was checked in the official repository; teaching features and the extension were not fully tested.",
+        "limit": "The repository describes free local analysis without an account and online game imports.",
+        "price": "Free and open source",
+        "labels": [
+          "Open source",
+          "Local Stockfish"
+        ]
+      }
+    },
+    {
+      "id": "ncm",
+      "name": "Next Chess Move",
+      "url": "https://nextchessmove.com/",
+      "group": "motor",
+      "cost": "unknown",
+      "features": [
+        "motor"
+      ],
+      "source": "https://nextchessmove.com/",
+      "added": true,
+      "desc": "Calculadora de continuação a partir de uma posição montada no tabuleiro.",
+      "why": "Adequada para uma hipótese pontual sobre uma posição de uma partida encerrada.",
+      "caveat": "Não foi confirmada revisão de partida inteira. A página retornou uma mensagem de falha de inicialização na consulta documental.",
+      "limit": "Página confirma cálculo de posição; cotas, funcionamento completo e preços não confirmados.",
+      "price": "Condições a confirmar",
+      "labels": [
+        "Posições individuais",
+        "Calculadora de continuação"
+      ],
+      "en": {
+        "desc": "A continuation calculator from a position set up on the board.",
+        "why": "Suitable for a focused question about a position from a finished game.",
+        "caveat": "Full-game review was not confirmed. The page showed a startup failure in the documentation reader.",
+        "limit": "The page confirms position calculation; quotas, full operation and pricing were not confirmed.",
+        "price": "Terms unconfirmed",
+        "labels": [
+          "Individual positions",
+          "Continuation calculator"
+        ]
+      }
+    }
+  ]
+}

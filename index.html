@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Compare 30 chess analysis tools by function, access and features. Game review, explanations and cross-game patterns, with official sources.">
+<meta name="theme-color" content="#f6f5ef"><title>Atlas — Análise de Xadrez</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232d3b31'/%3E%3Ctext x='32' y='49' text-anchor='middle' font-size='49' fill='%23f6f5ef'%3E♞%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="style.css"><link rel="stylesheet" href="settings.css"><link rel="stylesheet" href="assets/glove-cursor.css"><script src="data.js" defer></script><script src="catalog-en.js" defer></script><script src="catalog-extra.js" defer></script><script src="i18n.js" defer></script><script src="app.js" defer></script><script src="palettes.js" defer></script><script src="settings.js" defer></script><script src="assets/cursor-settings.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#catalogo">Ir para o catálogo</a>
+<aside class="sidebar">
+ <a class="brand" href="#"><span class="brand-icon">♞</span><span>ATLAS<small>ANÁLISE DE XADREZ</small></span></a>
+ <div class="side-label">SUA BIBLIOTECA DE FERRAMENTAS</div>
+ <nav id="navigation" aria-label="Categorias do catálogo"></nav>
+ <div class="side-label bottom-label">PARA ESCOLHER MELHOR</div>
+ <button class="nav-item" id="top-nav"><span>☆</span> Os cinco recomendados</button>
+ <a class="nav-item" href="#metodo"><span>≡</span> Critérios e fontes</a>
+ <div class="side-note"><span class="status-dot"></span>30 serviços catalogados<p>Inclui Chess.com e 29 alternativas. Organização por função principal.</p><small>Consulta documental · 03 nov. 2026</small></div>
+</aside>
+<main>
+ <header class="topbar"><span>Biblioteca <span class="slash">/</span> Ferramentas de análise</span><div class="topbar-controls"><button id="appearance-open" class="settings-launcher" aria-label="Configurações" title="Configurações" aria-haspopup="dialog" aria-controls="themes-dialog"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9.5 3-.7 2.2-2 .9-2.1-.5-2 3.4 1.5 1.7v2.6L2.7 15l2 3.4 2.1-.5 2 .9.7 2.2h4.9l.7-2.2 2-.9 2.1.5 2-3.4-1.5-1.7v-2.6L21.2 9l-2-3.4-2.1.5-2-.9L14.4 3Z"/><circle cx="12" cy="12" r="3"/></svg></button><span class="edition">EDIÇÃO 02 <span>·</span> NOVEMBRO 2026</span></div></header>
+ <section class="intro">
+  <div class="intro-copy"><div class="eyebrow"><span></span> UM MAPA PARA ESTUDAR SUAS PARTIDAS</div><h1>Entenda o lance.<br><em>Escolha a ferramenta.</em></h1><p>Da revisão de uma partida à identificação de erros recorrentes: encontre o serviço adequado à pergunta que você quer responder.</p><div class="intro-links"><a href="#catalogo" class="primary-link">Explorar os 30 serviços <span>↗</span></a><button id="top-hero">Ver os cinco recomendados <span>→</span></button></div></div>
+  <div class="board-art" aria-hidden="true"><div class="board-caption">ANALISAR É EXPLORAR POSSIBILIDADES</div><div class="mini-board"><span class="piece king">♚</span><span class="piece knight">♞</span><span class="piece rook">♜</span><span class="path-line"></span><span class="target-square"></span><span class="coord a">a</span><span class="coord h">h</span></div><div class="board-foot"><span>Uma posição.</span><strong>Mais de uma pergunta.</strong></div></div>
+ </section>
+ <section class="overview" aria-label="Blocos de ferramentas" id="overview"></section>
+ <section class="catalog" id="catalogo">
+  <div class="section-heading"><div><div class="eyebrow">O CATÁLOGO</div><h2 id="catalog-title">Todas as ferramentas<span id="count">30</span></h2></div><button class="text-button" id="reset">Limpar filtros ↺</button></div>
+  <div class="filters"><label class="search"><span aria-hidden="true">⌕</span><input type="search" id="search" placeholder="Buscar serviço, recurso ou ideia…" aria-label="Buscar ferramentas"></label><label class="select-label"><span class="sr-only">Custo</span><select id="cost"><option value="all">Todos os modelos de acesso</option><option value="free">Revisão ou análise gratuita</option><option value="limited">Gratuito com limites / pago</option><option value="unknown">Acesso a confirmar</option></select></label><label class="select-label"><span class="sr-only">Recurso</span><select id="feature"><option value="all">Todos os recursos</option><option value="explain">Explicações verbais</option><option value="patterns">Padrões entre partidas</option><option value="drills">Exercícios das partidas</option><option value="open">Código aberto</option><option value="pgn">Importação de PGN</option></select></label></div>
+  <div class="catalog-meta"><p id="results" role="status" aria-live="polite"></p><label class="favorite-filter"><input type="checkbox" id="favorites-only"> Só meus favoritos <span>♡</span></label></div>
+  <div id="recommend-note" class="recommend-note" hidden>Ordem editorial para você: compreensão, transparência e acesso gratuito. Não é um ranking experimental de aprendizagem.</div>
+  <div id="cards"></div>
+  <div class="empty" id="empty" hidden><span>♘</span><h3>Nenhum serviço neste recorte</h3><p>Tente outro termo ou retire um dos filtros.</p><button class="primary-link" id="empty-reset">Mostrar todos os serviços</button></div>
+ </section>
+ <section class="method" id="metodo"><div class="method-title"><div class="eyebrow">COMO LER ESTE MAPA</div><h2>Uma função principal.<br>Vários usos possíveis.</h2><p>A posição no catálogo indica a função usada para organizar o serviço. Os filtros cruzam recursos de diferentes blocos.</p></div><div class="method-points"><article><span>01</span><div><h3>Oferta documentada, com limites explícitos</h3><p>Descrições baseadas nas páginas oficiais consultadas em 03/11/2026. Não houve teste completo de todos os serviços. “Gratuito” pode se referir apenas à análise; extras podem ser pagos.</p></div></article><article><span>02</span><div><h3>Recomendação não é medição de aprendizagem</h3><p>Os cinco destaques priorizam compreensão, transparência e custo, conforme as preferências desta conversa. Recursos não confirmados foram deixados como tal, sem presumir ausência.</p></div></article><article><span>03</span><div><h3>Compare posições, não apenas porcentagens</h3><p>As fórmulas de precisão e os critérios de classificação variam entre sites. Confira a continuação que sustenta cada avaliação. Uma estimativa de rating por partida não substitui o histórico de desempenho.</p><a href="https://lichess.org/page/accuracy" target="_blank" rel="noopener noreferrer">Entender as métricas do Lichess ↗</a></div></article></div></section>
+ <footer><a class="footer-brand" href="#">♞ ATLAS</a><p>30 serviços · 4 blocos · Fontes em cada ficha</p><span>Um catálogo para escolher e investigar.</span></footer>
+</main>
+<div class="compare-tray" id="compare-tray" hidden><div><strong id="compare-count"></strong><span>Selecione até três ferramentas</span></div><div id="compare-names"></div><button id="clear-compare" class="text-button">Limpar</button><button id="open-compare" class="primary-link">Comparar <span>↗</span></button></div>
+<dialog id="details"><button class="close-dialog" aria-label="Fechar detalhes">×</button><div id="detail-content"></div></dialog>
+<dialog id="comparison"><button class="close-dialog" aria-label="Fechar comparação">×</button><div class="eyebrow">LADO A LADO</div><h2>Compare o que importa.</h2><p class="dialog-subtitle">Recursos documentados; um item não confirmado não significa que esteja ausente.</p><div class="table-scroll" id="comparison-content"></div></dialog>
+<dialog id="themes-dialog" class="themes-dialog" aria-labelledby="themes-title">
+<button class="close-dialog" aria-label="Fechar configurações">×</button>
+<div class="eyebrow">DO SEU JEITO</div><h2 id="themes-title">Configurações</h2><p class="dialog-subtitle">Idioma, aparência e escala, do seu jeito.</p>
+<fieldset class="appearance-section"><legend>Idioma</legend><div class="mode-options languages" translate="no"><button data-language="en" lang="en">English</button><button data-language="pt-BR" lang="pt-BR">Português (Brasil)</button></div></fieldset>
+<fieldset class="appearance-section"><legend>Modo de exibição</legend><div class="mode-options"><button data-mode="system">◐ <span>Automático</span></button><button data-mode="light">☀ <span>Claro</span></button><button data-mode="dark">☾ <span>Escuro</span></button></div><p class="setting-hint">Acompanha o navegador, mantendo a paleta escolhida.</p></fieldset>
+<fieldset class="appearance-section"><legend>Temas</legend><div class="theme-grid" id="theme-grid"></div></fieldset>
+<fieldset class="appearance-section"><legend>Fundo</legend><div class="mode-options two"><button data-background="solid">Sólido</button><button data-background="glass">Translúcido</button></div><p class="setting-hint" id="surface-hint">Luz e cores suaves no fundo e sob os cartões.</p></fieldset>
+<fieldset class="appearance-section"><legend>Escala da interface</legend><div class="zoom-row"><button id="zoom-out" aria-label="Diminuir zoom">−</button><input id="ui-zoom" aria-label="Escala da interface" type="range" min="70" max="150" step="5" value="100"><button id="zoom-in" aria-label="Aumentar zoom">+</button><output id="zoom-value">100%</output></div><button class="text-button" id="zoom-reset">Restaurar 100%</button><p class="setting-hint">O ajuste fica salvo neste navegador. O zoom do navegador continua disponível.</p></fieldset>
+<fieldset class="appearance-section" id="cursor-settings"><legend>Cursor</legend><div class="mode-options two"><button class="mode-option" id="cursor-custom" aria-pressed="true">Mão personalizada</button><button class="mode-option" id="cursor-system" aria-pressed="false">Padrão do sistema</button></div><label class="cursor-size-row" for="cursor-size"><span>Tamanho do cursor</span><output id="cursor-size-value" for="cursor-size">100%</output></label><input id="cursor-size" type="range" min="60" max="160" step="any" value="100"></fieldset>
+<div class="appearance-actions"><button class="text-button" id="appearance-reset">Restaurar padrão</button><button class="primary-link" id="settings-done">Pronto</button></div><p class="gesture-note">Segure o fundo por 0,5 s para alternar claro/escuro. Toque e segure o segundo toque para abrir as configurações.</p><p class="gesture-note"><span>Atalho de teclado:</span> <kbd>Alt + T</kbd></p>
+</dialog>
+<div id="toast" role="status" aria-live="polite"></div>
+</body></html>
