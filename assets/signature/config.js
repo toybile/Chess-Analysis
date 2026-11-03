@@ -1,0 +1,1 @@
+window.ToybileSignatureConfig={defaultLanguage:'en',language:{get:()=>language,set:code=>{language=code;try{localStorage.setItem('chess-atlas-language',language);}catch{}applyCatalogLanguage();renderOverview();render();translateDOM();}},...window.ChessAtlasBackground};
