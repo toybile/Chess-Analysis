@@ -1,0 +1,27 @@
+.themes-dialog{overflow:hidden;}
+.themes-dialog .dialog-panel{box-sizing:border-box;max-height:calc(100dvh - 52px);overflow:auto;overscroll-behavior:contain;border-radius:inherit;scrollbar-width:thin;scrollbar-color:color-mix(in srgb,var(--ink) 22%,transparent) transparent;scrollbar-gutter:stable;}
+.themes-dialog .dialog-panel:hover{scrollbar-color:color-mix(in srgb,var(--ink) 38%,transparent) transparent;}
+.themes-dialog .dialog-panel::-webkit-scrollbar{width:8px;height:8px;}
+.themes-dialog .dialog-panel::-webkit-scrollbar-track{background:transparent;margin-block:24px;}
+.themes-dialog .dialog-panel::-webkit-scrollbar-thumb{background:color-mix(in srgb,var(--ink) 22%,transparent);border:2px solid transparent;background-clip:padding-box;border-radius:99px;}
+.themes-dialog .dialog-panel:hover::-webkit-scrollbar-thumb{background-color:color-mix(in srgb,var(--ink) 38%,transparent);}
+@media(max-width:480px){.themes-dialog .dialog-panel{max-height:calc(100dvh - 28px);}}
+@media(forced-colors:active){.themes-dialog .dialog-panel{scrollbar-color:auto;}}
+
+.themes-dialog{padding:0}.themes-dialog .dialog-panel{padding:38px;--ink:var(--ink);}.theme-hold-feedback{--paper:var(--surface);--accent:var(--green);--border-soft:var(--line)}
+
+.themes-dialog .dialog-panel{position:relative}
+.settings-language{position:absolute;left:20px;top:16px;display:grid;place-items:center;box-sizing:border-box;width:36px;height:36px;padding:5px;border:0;border-radius:6px;background:transparent;color:var(--ink);cursor:pointer}
+.settings-language:hover{background:transparent;opacity:.8}
+.settings-language svg{display:block;width:26px;height:18px;stroke:none}
+.settings-language:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.signature-language-picker{--language-bg:var(--paper,var(--bg,#fff));--language-text:var(--ink,var(--text,#242638));--language-accent:var(--blue,var(--accent,#5055b0));--language-edge:var(--edge,var(--border,#d9dce8));box-sizing:border-box;position:fixed;inset:auto;margin:0;width:min(448px,calc(100vw - 24px));max-width:none;padding:8px;border:1px solid var(--language-edge);border-radius:15px;background:var(--language-bg);color:var(--language-text);box-shadow:0 12px 34px #0002;overflow:visible}
+.signature-language-picker:popover-open{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.signature-language-picker::backdrop{background:transparent;backdrop-filter:none;animation:none}
+.signature-language-picker .site-language-card{box-sizing:border-box;display:flex;align-items:center;justify-content:flex-start;gap:10px;min-width:0;width:auto;min-height:68px;height:auto;padding:11px;border:1px solid var(--language-edge);border-radius:10px;background:var(--language-bg);color:var(--language-text);font:500 12px/1.45 "Segoe UI",system-ui;text-align:left;cursor:pointer;white-space:normal;transition:background .15s,border-color .15s}
+.signature-language-picker .site-language-card:hover,.signature-language-picker .site-language-card[aria-checked="true"]{border-color:var(--language-accent);background:color-mix(in srgb,var(--language-accent) 12%,var(--language-bg))}
+.signature-language-picker .site-language-card:focus-visible{outline:2px solid var(--language-accent);outline-offset:-3px}
+.signature-language-picker .site-language-flag{display:grid;place-items:center;flex:none;width:28px;height:20px;line-height:0}
+.signature-language-picker .site-language-flag svg{display:block;width:28px;height:20px;fill:none;stroke:none}
+.signature-language-picker .site-language-name{min-width:0;overflow-wrap:normal}
+.signature-language-picker .site-language-card{transition:none}
