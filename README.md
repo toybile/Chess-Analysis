@@ -16,8 +16,7 @@ The catalog includes Chess.com, alternative web services, one explicitly identif
 - English by default; complete English/Brazilian Portuguese catalog and interface.
 - Search, access/feature filters, local favorites, and comparisons of up to three tools.
 - Individual entries with rationale, documented access limits, interpretation limits and official sources.
-- Portfolio-based settings: automatic/light/dark display, the Portfolio's eight palettes plus Atlas, solid/translucent backgrounds, custom/system cursor and cursor size.
-- Interface zoom from 70% to 150%, plus/minus controls, slider and 100% reset.
+- Shared Portfolio language/background panel, with automatic/light/dark display and solid/translucent backgrounds. The original hold gesture, progress indicator and language picker are bundled locally with source provenance.
 - Settings shortcut: **Alt + T**. Hold empty background for 0.5 seconds to toggle light/dark; tap then hold the second tap to open settings. Moving or scrolling cancels the hold.
 - Settings and favorites stay in this browser's local storage. No account, analytics or backend is required.
 
@@ -57,6 +56,6 @@ The cursor implementation/artwork and palette values were reused from the user's
 
 ## Português
 
-Catálogo com **30 ferramentas**, busca, filtros, favoritos e comparação. O idioma inicial é inglês; português está disponível em Configurações. O painel reproduz o padrão do Portfólio e acrescenta zoom de 70% a 150%. Preferências são salvas apenas no navegador.
+Catálogo com **30 ferramentas**, busca, filtros, favoritos e comparação. O idioma inicial é inglês; português está disponível em Configurações. O painel comum contém idioma e fundo e reutiliza o gesto original do Portfólio. Preferências são salvas apenas no navegador.
 
 Consulta documental realizada em **03/11/2026**. Os recursos e limites são os anunciados nas fontes oficiais, sem teste integral de todos os serviços ou validação de resultados de aprendizagem. As fichas distinguem recursos não confirmados, lançamentos futuros e modalidades de acesso. O site é estático e pode ser hospedado diretamente no GitHub Pages.
