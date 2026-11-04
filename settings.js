@@ -29,13 +29,12 @@ document.querySelectorAll('[data-language]').forEach(b=>b.addEventListener('clic
 $('#ui-zoom').addEventListener('input',e=>changeZoom(Number(e.target.value)));$('#zoom-out').addEventListener('click',()=>changeZoom(state.zoom-5));$('#zoom-in').addEventListener('click',()=>changeZoom(state.zoom+5));$('#zoom-reset').addEventListener('click',()=>changeZoom(100));
 $('#appearance-reset').addEventListener('click',()=>{state={family:'atlas',mode:'system',background:'solid',zoom:100};language='en';save();try{localStorage.removeItem('chess-atlas-language');}catch{}applyCatalogLanguage();renderOverview();render();apply();});
 system.addEventListener('change',apply);reducedGlass.addEventListener('change',apply);addEventListener('resize',responsive);
-// Original Portfolio hold gesture; all native settings remain available.
-const feedback=document.createElement('div');feedback.className='theme-hold-feedback';feedback.setAttribute('aria-hidden','true');feedback.innerHTML='<span class="theme-hold-ring"><span class="hold-icon"></span></span><span class="theme-hold-label"></span>';document.body.append(feedback);
-window.ToybileHold.install({root,feedback,openSettings:open,toggleMode:()=>{state.mode=scheme()==='dark'?'light':'dark';save();apply();},isBackground:target=>target instanceof Element&&!document.querySelector('dialog[open]')&&!target.closest('button,a,input,select,label,textarea,article,h1,h2,h3,p,dialog,[contenteditable]')&&!!target.closest('body,main,section,aside,header')});
+// Shared window owns gesture.
 const flags = {
   pt: '<svg viewBox="0 0 30 20" aria-hidden="true" style="stroke:none;width:26px;height:18px"><rect width="30" height="20" rx="2" fill="#229e45"/><path d="M15 2 28 10 15 18 2 10Z" fill="#ffdf42"/><circle cx="15" cy="10" r="5" fill="#24459b"/><path d="M10.5 8.5q5-1 9 3" fill="none" stroke="#fff" stroke-width="1"/></svg>',
   en: '<svg viewBox="0 0 30 20" aria-hidden="true" style="stroke:none;width:26px;height:18px"><rect width="30" height="20" rx="2" fill="#243b79"/><path d="m0 0 30 20M30 0 0 20" stroke="#fff" stroke-width="5"/><path d="m0 0 30 20M30 0 0 20" stroke="#ce3545" stroke-width="2"/><path d="M15 0v20M0 10h30" stroke="#fff" stroke-width="7"/><path d="M15 0v20M0 10h30" stroke="#ce3545" stroke-width="4"/></svg>',
 };
 const languagePicker=window.ToybileLanguagePicker(document.getElementById('settings-language'),flags,()=>language,code=>{language=code;try{localStorage.setItem('chess-atlas-language',language);}catch{}applyCatalogLanguage();renderOverview();render();translateDOM();apply();});
+window.ToybileChessAppearance={get:()=>({...state,language}),scheme,extraTheme:()=>{const p=appearancePalettes.find(p=>p.id==='atlas');return{...p,labelEn:'Atlas',light:{...p.light,id:'atlas-light',scheme:'light',family:'atlas'},dark:{...p.dark,id:'atlas-dark',scheme:'dark',family:'atlas'}};},apply:s=>{Object.assign(state,s);save();apply();},setZoom:changeZoom,setLanguage:code=>{language=code;try{localStorage.setItem('chess-atlas-language',code);}catch{}applyCatalogLanguage();renderOverview();render();translateDOM();apply();}};
 apply();
 })();
